@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 3px;
+}
+
+h1 {
+  color: orange;
+  font-size: 50px;
+  padding: 10px;
+}
+
+h2 {
+  color: yellow;
+  text-decoration: underline;
+  padding: 1px;
+  font-size: 30px;
+}
+
+p {
+    color: blue;
+    text-align: left;
+    padding: 15px;
+    margin: 0px;
+}

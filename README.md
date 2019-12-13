@@ -39,7 +39,7 @@ There aren't any individual exercises this time. Instead, you'll be building an 
 Most of us are familiar with the concept of a to-do list, so the use cases here shouldn't be too difficult to grasp.
 
 * Adding an item to the list
-* Setting the priortiy of an item on the list
+* Setting the priority of an item on the list
 * Marking an item as complete
 * Removing an item from the list
 
@@ -87,4 +87,3 @@ If you submit your problem set at midnight (i.e., January 6, 2020, at 12:00am), 
 * Your code must adhere to the course style guidelines.
 
 Happy coding!
-
