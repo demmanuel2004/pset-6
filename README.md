@@ -1,4 +1,4 @@
-# Problem Set 6
+# Problem Set 6 || Alexa is cool
 
 It's time to put your skills to the test. This problem set focuses on programming in JavaScript. More specifically, it focuses on creating a fully functional to-do list application from scratch.
 
