@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Polar Bears</title>
+		<title>alexa is cool</title>
 		<link rel="stylesheet" type="text/css" href="Styles/styles.css" />
 	</head>
 	<body style = "background: url(https://geographical.co.uk/media/k2/items/cache/5b614a25660f429d5a157c69d1d61d49_XL.jpg)">
