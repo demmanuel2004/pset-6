@@ -2,34 +2,37 @@ let items = [];
 
 function displayItems() {
 
-	 	
-	items.sort(function(a, b){
-    	return b.priority - a.priority;
-	})
 
-	const list = document.querySelector('.todo-list');
-	
-	list.innerHTML=""; 
-	
-	Object.entries( items ).forEach(([key, item]) => {
-	  
-	  var currentPrioirty = item.priority ? 'High' : 'Low';
-	  var changePrioirty = item.priority ? 'Low' : 'High';
-	  var isCompleted = item.status ? 'strike' : '';
-	  var changePrioirtyButton = `<button onclick="changePriority( ${item.id} )">Mark as ${changePrioirty}</button>`;
-	  var toggleStatusButton = `<button onclick="changeStatus( ${item.id} )">Toggle Status</button>`;
-	  
-	  var removeButton = `<button onclick="removeItem( ${item.id} )">Delete</button>`;
+    items.sort(function(a, b) {
+        return b.priority - a.priority;
+    })
+
+    const list = document.querySelector('.todo-list');
+
+    list.innerHTML = "";
+
+    Object.entries(items).forEach(([key, item]) = > {
+
+            var currentPrioirty = item.priority ? 'High' : 'Low';
+            var changePrioirty = item.priority ? 'Low' : 'High';
+            var isCompleted = item.status ? 'strike' : '';
+            var changePrioirtyButton = ` < button onclick = "changePriority( ${item.id} )" > Mark as $ {
+                changePrioirty
+            } < /button>`;
+	  var toggleStatusButton = `<button onclick="changeStatus( ${item.id} )">Toggle Status</button > `;
+
+            var removeButton = ` < button onclick = "removeItem( ${item.id} )" > Delete < /button>`;
 	  
 	  list.insertAdjacentHTML( 'beforeend', `
 			<li class="todo-item ${isCompleted}" data-key="${item.id}">
-			      <span>${item.text}</span>
-			      <span>${currentPrioirty}</span>
+			      <span>${item.text}</span > < span > $ {
+                currentPrioirty
+            } < /span>
 			      
-			      <span> ${changePrioirtyButton} </span>
-			      <span> ${toggleStatusButton} </span>
-			      <span> ${removeButton} </span>
-				</li>` 
+			      <span> ${changePrioirtyButton} </span > < span > $ {
+                toggleStatusButton
+            } < /span>
+			      <span> ${removeButton} </span > < /li>` 
   		); 			  	  
 	  	
 	});
