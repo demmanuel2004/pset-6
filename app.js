@@ -2,14 +2,14 @@ let items = [];
 
 function displayItems() {
 
-	//Sort by Prioirty 	
+	 	
 	items.sort(function(a, b){
     	return b.priority - a.priority;
 	})
 
 	const list = document.querySelector('.todo-list');
 	
-	list.innerHTML=""; //Clear the list.
+	list.innerHTML=""; 
 	
 	Object.entries( items ).forEach(([key, item]) => {
 	  
@@ -35,7 +35,7 @@ function displayItems() {
 	});
 
 	return;
-  // const list = document.querySelector('.todo-list');
+  
 
 
 }
@@ -46,23 +46,23 @@ function addItem() {
   if( inputText.value == '') {
   	return;
   }
-  //Can also query by class
-  //const textValue =  document.querySelector('.todoText');
+  
+  
     
-  //const selectDropdown = document.querySelector("select.priority");
+  
 
   const item = {
     text: inputText.value,
-    priority : 0,//selectDropdown.value,
+    priority : 0,
     status: 0,
     id: Date.now(),
   };
 
   items.push(item);
   
-  //Reset Form
+  
   inputText.value="";
-  //selectDropdown.value=0;
+  
   
   displayItems();
 
@@ -71,7 +71,7 @@ function addItem() {
 
 function changePriority( key ) {
 
-	//const index = items.findIndex(item => item.id === Number(key));
+	
 	const index = items.findIndex(
  function(item) {
 		if( item.id == key) {
@@ -84,7 +84,7 @@ function changePriority( key ) {
 
 function changeStatus( key ) {
 
-	//const index = items.findIndex(item => item.id === Number(key));
+	
 	const index = items.findIndex(
  function(item) {
 		if( item.id == key) {
