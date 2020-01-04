@@ -97,7 +97,7 @@ function changeStatus( key ) {
 }
 
 function removeItem( key ) {
-	//items = items.filter(item => item.id != key);
+	
 	items = items.filter( function( item ) {
 		return item.id != key;
 	});
